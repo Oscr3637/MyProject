@@ -1,5 +1,11 @@
+---
+import Menu from "../components/Menu.astro";
+---
+
 <!doctype html>
 <html lang="en">
+	<Menu/>
+
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -8,31 +14,9 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<!-- posicopn del logo -->
-				<div></div>
-				<!--parte derecha del menu -->
-				<div>
-					<ul>
-						<li>
-							<a href="/">inicio</a>
-						
-						<li>
-							<a href="/">¿Quienes somos?</a>
-						</li>
-						<li>
-							<a href="">servicios</a>
-						</li>
-					</ul>
-				
-				<button> compras</button>
-				</div>
-			</nav>
-		</header>
+		<slot />
+		<footer>
+			<p>pie de pagina</p>
+		</footer>
 	</body>
-	<slot />
-	<footer>
-		<p>pie de pagina</p>
-	</footer>
 </html>
