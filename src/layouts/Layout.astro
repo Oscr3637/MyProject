@@ -1,13 +1,11 @@
 ---
 import Menu from "../components/Menu.astro";
 import { Icon } from "astro-icon/components";
-import '../styles/global.css'
+import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="en">
-	<Menu/>
-
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -16,7 +14,9 @@ import '../styles/global.css'
 		<title>Valencia Edo Carabobo</title>
 	</head>
 	<body>
+		<Menu />
 		<slot />
+
 		<footer>
 			<p>pie de pagina</p>
 		</footer>

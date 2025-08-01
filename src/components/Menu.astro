@@ -2,20 +2,32 @@
 import { Icon } from 'astro-icon/components';
 ---
 <header>
-	 <h3>+584125079932</h3>
-	 	<Icon name="mdi:whatsapp" width={32} height={32}/>
-	 <h3>Valencia Edo Carabobo</h3>
-	 <h3>Redes Sociales</h3>
-	 	<Icon name="devicon:facebook" width={32} height={32} />
-	 	<Icon name="mdi:instagram" width={32} height={32}/>
+	<div class="flex justify-center align-middle gap-4 ">
+		<ul>
+			<li>
+				<h3> +584125079932 </h3>
+				<Icon name="mdi:whatsapp" width={32} height={32}/> 
+			</li>		
+			<li class="flex gap-4">
+				<h3>Valencia Edo Carabobo</h3>
+			</li>
+			<li class="flex gap-4">
+				<h3>Redes Sociales</h3> 
+	 		<Icon name="devicon:facebook" width={32} height={32} />
+	 		<Icon name="mdi:instagram" width={32} height={32}/> 
+			</li>
+	  	
+		</ul>
+	</div>
 
-
-	<nav>
+	<nav class="flex justify-between items-center">
 			<!-- posicopn del logo -->
-		<div></div>
-				<!--parte derecha del menu -->
 		<div>
-			<ul>
+			
+		</div>
+				<!--parte derecha del menu -->
+		<div class flex justify-between items-center>
+			<ul class="flex gap-12">
 				<li>Inicio</li>
 				<a href="/"></a>
 				<li>Nosotros</li>
@@ -25,7 +37,7 @@ import { Icon } from 'astro-icon/components';
 			</ul>
 		</div>
 		<div>
-			<button>Obten asesoria Gratis</button>
+			<button class="flex bg-amber-400 text-purple-300 gap-2 font-bold ">Obten asesoria Gratis</button>
 		</div>
 	</nav>
 </header>
